@@ -1,0 +1,503 @@
+:root {
+    --blue: lightblue;
+    --black: black;
+    --white: white;
+    --light-color: grey;
+    --light-bg: lightgrey;
+    --border: .2rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+* {
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+section {
+    padding: 7rem 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+input[class="appointment-btn"] {
+      margin-left: 27%;
+
+}
+
+.appointment-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+.appointment-btn:hover {
+    background-color: black;
+    color: var(--white);
+}
+
+/* Header */
+
+.header {
+    padding: 2rem;
+    border-bottom: var(--border);
+}
+
+.header.active {
+    background-color: lightgrey;
+    box-shadow: var(--box-shadow);
+    border: 0;
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.header .logo span {
+    color: var(--blue);
+}
+
+.header .nav a {
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.header .nav a:hover {
+    color: var(--blue);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Home */
+
+.home {
+    background: url('./images/dental-main-1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .main {
+    width: 55rem;
+    padding: 2rem;
+}
+
+.home .main h3 {
+    font-size : 6rem;
+    color: var(--black);
+    line-height: 1;
+}
+
+.home .main p {
+    line-height: 1.5;
+    font-size: 2rem;
+    color: grey;
+    margin-top: 3rem;
+}
+
+/* About */
+
+.info .row {
+    min-height: 50vh;
+}
+
+.info .about-us h2 {
+    font-size: 3.5rem;
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.info .about-us h3 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+.info .about-us p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+
+/* Services */
+
+.services {
+    background-color: var(--blue);
+}
+
+.services .heading {
+    text-decoration: underline;
+}
+
+.services .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.services .services-container .our-service {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.services .services-container .our-service:hover {
+    background-color: lightblue;
+    transition: background-color .5s .3s;
+}
+
+
+.services .services-container .our-service img {
+    margin: 1rem 0;
+    height: 4rem;
+}
+
+.services .services-container .our-service h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.services .services-container .our-service p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+} 
+
+/* Our Office */
+
+.office .heading {
+    text-decoration: underline;
+}
+
+.office .office-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+}
+
+.office .office-container .our-office {
+    background-color: var(--blue);
+    padding: 2rem;
+    border-radius: .5em;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.office .office-container .our-office img {
+    height: 20rem;
+    margin: 1rem 0;
+}
+
+.office .office-container .our-office h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1.5rem 0;
+}
+
+.office .office-container .our-office p {
+    font-size: 1.5rem;
+    color: var(--white);
+    line-height: 2;
+}
+
+
+/* Our Team */
+
+.team .heading {
+    text-decoration: underline;
+}
+
+.team  {
+    background-color: lightblue;
+}
+
+.team .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.team .team-container .our-team {
+    background-color: var(--white);
+    text-align: center;
+    border-radius: .5rem;
+    /* box-shadow: var(--box-shadow); */
+    padding: 2rem;
+}
+
+.team .team-container .our-team img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+
+.team .team-container .our-team p {
+    padding: 2rem 0;
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: 0;
+}
+
+
+.team .team-container .our-team h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.team .team-container .our-team span {
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+
+/* Contact */
+
+.appointment-heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.appointment {
+    background-image: url('images/dbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.appointment form {
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.appointment form .message {
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    padding: 1.2rem 2rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.appointment form .signup {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black); 
+    text-transform: none;
+}
+
+.appointment form span {
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+
+
+
+/* Footer */
+
+.footer .footer-header {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.footer .footer-logo {
+    font-size: 3rem;
+    color: var(--black);
+    position: relative;
+    top: -45px;
+    margin-bottom: -12px;
+}
+
+.footer .footer-logo span {
+    color: grey;
+}
+
+.footer {
+    background-color: lightblue;
+}
+
+.footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .footer-container .contact-info {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.footer .foot-container .contact-info h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--black);
+}
+
+.footer .footer-container .contact-info p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2;
+}
+
+.footer .credit {
+    text-align: center;
+    border-top: var(--border);
+    padding-top: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    padding-bottom: 2rem;
+}
+
+.footer .credit span {
+    color: black;
+}
+
+.footer .map {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+/* Media Queries */
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header .appointment-btn {
+        display: none;
+    }
+
+    section {
+        padding: 5rem 2rem;
+    }
+
+    .footer .footer-logo {
+        margin-top: 30px;
+      }
+}
+
+@media (max-width:768px) {
+
+    section {
+        padding: 3rem 1rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+
+    .header .nav {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: lightgrey;
+        padding: 1rem 0;
+        text-align: center;
+        flex-flow: column;
+        /* clip-path enables the menu to hide */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+     
+    }
+
+    .header .nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .nav a {
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+
+    /* Hides the pic on smaller screens - .home & .home .content */
+    .home {
+        background-position: left;
+    }
+
+    .home .main {
+        width: auto;
+    }
+
+    .footer .footer-logo {
+        margin-top: 30px;
+      }
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home .main h3 {
+        font-size: 4rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+}
